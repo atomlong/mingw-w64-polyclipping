@@ -1,6 +1,6 @@
 
 pkgname=mingw-w64-polyclipping
-pkgver=6.4
+pkgver=6.4.2
 pkgrel=1
 pkgdesc="Polygon clipping library (mingw-w64)"
 arch=('any')
@@ -10,9 +10,9 @@ depends=('mingw-w64-crt')
 makedepends=('mingw-w64-cmake' 'dos2unix')
 options=('!buildflags' 'staticlibs' '!strip')
 source=("http://downloads.sourceforge.net/polyclipping/clipper_ver${pkgver}.zip"
-        'http://pkgs.fedoraproject.org/cgit/mingw-polyclipping.git/plain/polyclipping.patch')
-sha256sums=('cfa08836e7838773ac79d13e14daf1ce7d2f4faee77329798614813b79151e39'
-            'e8363eff5a28ce1159194afa1c6691ec6c493474651644d8e95dc7c8e6ea8cdd')
+        'https://src.fedoraproject.org/rpms/mingw-polyclipping/raw/rawhide/f/polyclipping.patch')
+sha256sums=('a14320d82194807c4480ce59c98aa71cd4175a5156645c4e2b3edd330b930627'
+            '83e4884f14e4ab0eb18470407c8881c8cb8721485a4a9ecac0c8e6b1b35bcf03')
 _architectures="i686-w64-mingw32 x86_64-w64-mingw32"
 
 prepare() {
